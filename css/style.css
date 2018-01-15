@@ -1,0 +1,49 @@
+@font-face{
+ font-family: "Gilroy"; /* Гарнитура шрифта */
+ src: url(../fonts/Gilroyextrabold.ttf) format('truetype'); /* Путь к файлу со шрифтом */
+ font-weight:bold;
+ font-style:normal;
+}
+
+@font-face{
+ font-family: "Gilroy"; /* Гарнитура шрифта */
+ src: url(../fonts/Gilroylight.ttf) format('truetype'); /* Путь к файлу со шрифтом */
+ font-weight: normal;
+ font-style:normal;
+}
+
+@font-face{
+ font-family: "Open Sans"; /* Гарнитура шрифта */
+ src: url(../fonts/OpenSans-Light.ttf) format('truetype'); /* Путь к файлу со шрифтом */
+ font-weight: normal;
+ font-style:normal;
+}
+
+@font-face{
+ font-family: "Open Sans"; /* Гарнитура шрифта */
+ src: url(../fonts/OpenSans-Regular.ttf) format('truetype'); /* Путь к файлу со шрифтом */
+ font-weight: normal;
+ font-style:normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  min-width: 768px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 20px -3px #000101;
+  box-shadow: 0 0 20px -3px #000101;
+}
