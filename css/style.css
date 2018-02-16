@@ -15,7 +15,7 @@
 @font-face{
  font-family: "Open Sans"; /* Гарнитура шрифта */
  src: url(../fonts/OpenSans-Light.ttf) format('truetype'); /* Путь к файлу со шрифтом */
- font-weight: normal;
+ font-weight: 300;
  font-style:normal;
 }
 
@@ -34,16 +34,240 @@ body {
   line-height: 26px;
   font-weight: 400;
   color: #000000;
-  text-transform: uppercase;
-  background-color: #f2f2f2;
+  background-color: #fff;
 }
 
 .container {
   position: relative;
-  max-width: 1200px;
+  max-width: 1160px;
   min-width: 768px;
   margin: 0 auto;
   background-color: #ffffff;
-  -webkit-box-shadow: 0 0 20px -3px #000101;
-  box-shadow: 0 0 20px -3px #000101;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-header {
+  position: relative;
+  box-sizing: border-box;
+  padding: 85px 60px 0 60px;
+  width: 1160px;
+  min-height: 200px;
+  background-image: linear-gradient(to bottom, #ffffff 19%, #f8e297 19%);
+}
+
+.header-logo {
+  position: absolute;
+  top: 20px;
+  left: 60px;
+}
+
+.header-logo a:hover {
+  opacity: 0.6;
+}
+
+.header-logo a:active {
+  opacity: 0.3;
+}
+
+.header-top-right a:hover,
+.header-bottom a:hover,
+.mod-menu a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-top-right a:active,
+.header-bottom a:active,
+.mod-menu a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-top-left {
+  box-sizing: border-box;
+  width: 530px;
+  position: relative;
+}
+
+.header-top-right {
+  display: flex;
+}
+
+.header-top .buy-navigation {
+  display: flex;
+  margin-left: 30px;
+}
+
+.buy-navigation li:first-child {
+  margin-right: 68px;
+}
+
+.header-top form {
+  style-list: none;
+  min-height: 50px;
+}
+
+.found input,
+.user-navigation,
+.buy-navigation,
+.mod-menu {
+  border: none;
+  background-color: inherit;
+  font-family: "OpenSans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.user-login {
+  box-sizing: border-box;
+  width: 290px;
+  padding-left: 39px;
+}
+
+.btn-found-form {
+  position: absolute;
+  background-color: inherit;
+  top: -26px;
+  color: #000;
+  width: 85px;
+  height: 50px;
+  border: 2px solid black;
+  visibility: hidden;
+}
+
+
+.btn-found-form:hover  {
+  color: rgb(255, 255, 255);
+  background-color: #000;
+}
+
+.btn-found-form:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #000;
+}
+
+.input-find {
+  width: 355px;
+  padding-left: 40px;
+
+}
+
+.input-find:focus {
+  border-bottom: 2px solid black;
+  outline: none;
+}
+
+.input-find:focus + .btn-found-form,
+.btn-found-form:hover,
+.btn-found-form:active {
+  visibility: visible;
+}
+
+.input-find::-webkit-input-placeholder  {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.input-find:hover::-webkit-input-placeholder  {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.input-find:focus::-webkit-input-placeholder  {
+  color: rgba(0, 0, 0, 1);
+}
+
+.header-bottom {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.header-bottom .catalog,
+.header-bottom .conditions,
+.header-bottom .contacts {
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 16px;
+  letter-spacing: 3.5px;
+}
+
+.header-bottom-left {
+  width: 530px;
+}
+
+.header-bottom-right {
+  width: 564px;
+  display: flex;
+}
+
+.conditions {
+  width: 400px;
+}
+
+.conditions-list {
+  display: flex;
+  padding-left: 65px;
+}
+
+.conditions-list li:first-child {
+  margin-right: 34px;
+}
+
+.contacts-block {
+  width: 164px;
+}
+
+.contacts {
+  padding-left: 45px;
+}
+
+.mod-menu {
+  position: absolute;
+  display: flex;
+  visibility: hidden;
+  background-color: #f8e297;
+  box-sizing: border-box;
+  padding: 0 60px;
+  width: 1160px;
+  margin: 0 auto;
+  top: 200px;
+  right: 0;
+  height: 138px;
+  z-index: 1;
+}
+
+.catalog > li:hover + .mod-menu {
+  visibility: visible;
+}
+
+.mod-menu ul {
+  min-width: 200px;
+  margin-top: 4px;
+}
+
+.mod-menu li {
+  margin-bottom: 10px;
+}
+
+.mod-menu ul:first-child {
+  margin-right: 40px;
 }
