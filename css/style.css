@@ -91,6 +91,20 @@ a {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.catalog a:hover::after,
+.login-link:hover::before,
+.compare:hover::before,
+.basket:hover::before {
+  opacity: 0.6;
+}
+
+.catalog a:active::after,
+.login-link:active::before,
+.compare:active::before,
+.basket:active::before {
+  opacity: 0.3;
+}
+
 .header-top-right a:active,
 .header-bottom a:active,
 .mod-menu a:active {
@@ -110,6 +124,38 @@ a {
 
 .header-top-right {
   display: flex;
+}
+
+.login-link::before,
+.compare::before,
+.basket::before,
+.found::before {
+  content: "";
+  position: absolute;
+  top: 46%;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+}
+
+.found::before {
+  top: 10%;
+  background-image: url(../img/search.svg);
+}
+
+.login-link::before {
+  background-image: url(../img/user.svg);
+  left: 600px;
+}
+
+.compare::before {
+  background-image: url(../img/compare.svg);
+  right: 253px;
+}
+
+.basket::before {
+  background-image: url(../img/cart.svg);
+  right: 123px;
 }
 
 .header-top .buy-navigation {
@@ -270,4 +316,15 @@ a {
 
 .mod-menu ul:first-child {
   margin-right: 40px;
+}
+
+.catalog a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 230px;
+  height: 20px;
+  width: 20px;
+  background-image: url(../img/plus.svg);
+  background-repeat: no-repeat;
 }
