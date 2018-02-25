@@ -168,14 +168,13 @@ a {
 }
 
 .header-top form {
-  style-list: none;
+  list-style: none;
   min-height: 50px;
 }
 
 .found input,
 .user-navigation,
-.buy-navigation,
-.mod-menu {
+.buy-navigation {
   border: none;
   background-color: inherit;
   font-family: "OpenSans", Arial, sans-serif;
@@ -186,7 +185,11 @@ a {
 .user-login {
   box-sizing: border-box;
   width: 290px;
-  padding-left: 39px;
+  padding-left: 18px;
+}
+
+.user-login a {
+  padding-left: 20px;
 }
 
 .btn-found-form {
@@ -254,6 +257,7 @@ a {
   font-size: 18px;
   padding-top: 16px;
   letter-spacing: 3.5px;
+  margin: 0;
 }
 
 .header-bottom-left {
@@ -286,6 +290,10 @@ a {
   padding-left: 45px;
 }
 
+.catalog {
+  position: relative;
+}
+
 .mod-menu {
   position: absolute;
   display: flex;
@@ -295,19 +303,28 @@ a {
   padding: 0 60px;
   width: 1160px;
   margin: 0 auto;
-  top: 200px;
-  right: 0;
+  top: 65px;
+  left: -60px;
   height: 138px;
   z-index: 1;
 }
 
-.catalog > li:hover + .mod-menu {
+.show-menu:hover ~ .mod-menu {
   visibility: visible;
+}
+
+.catalog a  {
+  padding-right: 20px;
 }
 
 .mod-menu ul {
   min-width: 200px;
   margin-top: 4px;
+  font-family: "OpenSans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .mod-menu li {
@@ -318,7 +335,7 @@ a {
   margin-right: 40px;
 }
 
-.catalog a::after {
+.show-menu::after {
   content: "";
   position: absolute;
   top: 50%;
