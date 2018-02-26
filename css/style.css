@@ -85,7 +85,7 @@ a {
   opacity: 0.3;
 }
 
-.header-top-right a:hover,
+.header-user-block a:hover,
 .header-bottom a:hover,
 .mod-menu a:hover {
   color: rgba(0, 0, 0, 0.6);
@@ -105,7 +105,7 @@ a {
   opacity: 0.3;
 }
 
-.header-top-right a:active,
+.header-user-block a:active,
 .header-bottom a:active,
 .mod-menu a:active {
   color: rgba(0, 0, 0, 0.3);
@@ -116,13 +116,13 @@ a {
   justify-content: space-between;
 }
 
-.header-top-left {
+.header-find-form {
   box-sizing: border-box;
   width: 530px;
   position: relative;
 }
 
-.header-top-right {
+.header-user-block {
   display: flex;
 }
 
@@ -160,11 +160,15 @@ a {
 
 .header-top .buy-navigation {
   display: flex;
-  margin-left: 30px;
+  margin-left: 3px;
 }
 
 .buy-navigation li:first-child {
-  margin-right: 68px;
+  margin-right: 41px;
+}
+
+.buy-navigation li {
+  padding-left: 27px;
 }
 
 .header-top form {
@@ -185,11 +189,11 @@ a {
 .user-login {
   box-sizing: border-box;
   width: 290px;
-  padding-left: 18px;
+  padding-left: 12px;
 }
 
 .user-login a {
-  padding-left: 20px;
+  padding-left: 26px;
 }
 
 .btn-found-form {
@@ -260,11 +264,11 @@ a {
   margin: 0;
 }
 
-.header-bottom-left {
+.catag {
   width: 530px;
 }
 
-.header-bottom-right {
+.header-buy-block {
   width: 564px;
   display: flex;
 }
@@ -303,13 +307,14 @@ a {
   padding: 0 60px;
   width: 1160px;
   margin: 0 auto;
-  top: 65px;
+  top: 40px;
   left: -60px;
-  height: 138px;
+  height: 163px;
   z-index: 1;
 }
 
-.show-menu:hover ~ .mod-menu {
+.show-menu:hover ~ .mod-menu,
+.mod-menu:hover {
   visibility: visible;
 }
 
@@ -319,7 +324,7 @@ a {
 
 .mod-menu ul {
   min-width: 200px;
-  margin-top: 4px;
+  margin-top: 28px;
   font-family: "OpenSans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -344,4 +349,13 @@ a {
   width: 20px;
   background-image: url(../img/plus.svg);
   background-repeat: no-repeat;
+}
+
+.sales-hits {
+  background-image: linear-gradient(to bottom, #f8e297 28%, #ffffff 28%);
+  width: 100%;
+}
+
+.slide-block {
+  display: flex;
 }
