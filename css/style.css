@@ -359,3 +359,27 @@ a {
 .slide-block {
   display: flex;
 }
+
+.input-block {
+  position: absolute;
+}
+
+.slide-photo {
+  width: 590px;
+  outline: 2px solid green;
+}
+
+.slide-info {
+  width: 560px;
+  outline: 1px solid red;
+}
+
+.slide-photo img {
+  margin-top: 30px;
+  margin-left: 90px;
+}
+
+.slide-info h3 {
+  font-size: 47px;
+  font-weight: bold;
+}
