@@ -352,7 +352,7 @@ a {
 }
 
 .sales-hits {
-  background-image: linear-gradient(to bottom, #f8e297 28%, #ffffff 28%);
+  background-image: linear-gradient(to bottom, #f8e297 27%, #ffffff 27%);
   width: 100%;
 }
 
@@ -370,7 +370,7 @@ a {
 }
 
 .slide-info {
-  width: 560px;
+  width: 500px;
   outline: 1px solid red;
 }
 
@@ -382,4 +382,80 @@ a {
 .slide-info h3 {
   font-size: 47px;
   font-weight: bold;
+  margin: 107px 0 0 8px;
+  line-height: 1.2;
+  letter-spacing: 0.7px;
+}
+
+.slide-info p {
+  margin: 20px 0 0 8px;
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.1px;
+  line-height: 2;
+}
+
+.slide-info .detail {
+  margin: 43px 0 0 11px;
+  padding: auto;
+  border: none;
+  width: 220px;
+  height: 40px;
+  background-color: none;
+  outline: 0;
+  background-image: linear-gradient(to bottom, #ffffff 37%, #e4c341 37%, #e4c341 60%, #ffffff 60%);
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.slide-info .detail:hover {
+  background: #e4c341;
+}
+
+.slide-info .detail:active {
+  background-color: #e4c341;
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.slide-info table {
+  margin: 55px 0 0 5px;
+
+}
+
+.slide-info .second-column {
+  padding-left: 30px;
+}
+
+.slide-info .therd-column {
+  padding-left: 5px;
+}
+
+.slide-info table td {
+  outline: 1px solid green;
+  width: 130px;
+  height: 35px;
+}
+
+.slide-info .detail-name {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.slide-info .detail-row {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 36px;
+}
+
+.input-block::after {
+  content: "";
+  left: 600px;
+  top: 65px;
+  position: absolute;
+  width: 100px;
+  height: 7px;
+  background-color: #fff;
 }
