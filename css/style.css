@@ -46,6 +46,22 @@ body {
   box-sizing: border-box;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 ul,
 ol {
   list-style: none;
@@ -354,6 +370,7 @@ a {
 .sales-hits {
   background-image: linear-gradient(to bottom, #f8e297 27%, #ffffff 27%);
   width: 100%;
+  min-height: 510px;
 }
 
 .slide-block {
@@ -366,12 +383,11 @@ a {
 
 .slide-photo {
   width: 590px;
-  outline: 2px solid green;
 }
 
 .slide-info {
   width: 500px;
-  outline: 1px solid red;
+
 }
 
 .slide-photo img {
@@ -422,7 +438,16 @@ a {
 
 .slide-info table {
   margin: 55px 0 0 5px;
+}
 
+.slide-info .block-number {
+  position: absolute;
+  bottom: 240px;
+  left: 922px;
+  font-size: 179px;
+  color: #fff;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
 }
 
 .slide-info .second-column {
