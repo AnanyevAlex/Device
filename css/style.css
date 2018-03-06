@@ -552,7 +552,6 @@ a {
   bottom: 0;
   left: 0;
   margin: auto;
-  background-color: red;
 }
 
 input#selfi-slide:checked ~ .selfi-slide {
