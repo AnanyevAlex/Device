@@ -375,6 +375,8 @@ a {
 
 .slide-block {
   display: flex;
+  min-height: 535px;
+
 }
 
 .copter-slide,
@@ -471,7 +473,7 @@ a {
 
 .slide-info .block-number {
   position: absolute;
-  bottom: 240px;
+  top: -95px;
   left: 922px;
   font-size: 179px;
   color: #fff;
@@ -524,17 +526,17 @@ a {
 }
 
 .radio-selfi {
-  bottom: 155px;
+  top: 355px;
   right: 148px;
 }
 
 .radio-fitnes {
-  bottom: 155px;
+  top: 355px;
   right: 116px;
 }
 
 .radio-copter {
-  bottom: 155px;
+  top: 355px;
   right: 84px;
 }
 
