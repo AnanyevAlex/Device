@@ -66,13 +66,13 @@
     <main>
       <section class="sales-hits">
         <div class="input-block">
-          <label for="selfi-slide"></label>
-          <label for="fitnes-slide"></label>
-          <label for="copter-slide"></label>
-          <input class="visually-hidden slide-input" type="radio" name="selfi-slide" id="selfi-slide" value="" checked>
-          <input class="visually-hidden slide-input" type="radio" name="fitnes-slide" id="fitnes-slide" value="">
-          <input class="visually-hidden slide-input" type="radio" name="copter-slide" id="copter-slide" value="">
-        
+          <input class="visually-hidden slide-input" type="radio" name="slide" id="selfi-slide" value="" checked>
+          <label for="selfi-slide" class="radio-selfi"></label>
+          <input class="visually-hidden slide-input" type="radio" name="slide" id="fitnes-slide" value="">
+          <label for="fitnes-slide" class="radio-fitnes"></label>
+          <input class="visually-hidden slide-input" type="radio" name="slide" id="copter-slide" value="">
+          <label for="copter-slide" class="radio-copter"></label>
+  
 
         <div class="slide-block selfi-slide">
           <div class="slide-photo selfi-photo">
@@ -89,19 +89,72 @@
             <button class="detail" type="button" name="button">Подробнее</button>
             <table>
               <tr class="detail-row">
-                <td>8,5 м</td>
+                <td class="first-column">8,5 м</td>
                 <td class="second-column">5 кг</td>
                 <td class="therd-column">Карбон</td>
               </tr>
               <tr class="detail-name">
-                <td>длинна плаки</td>
+                <td class="first-column">длинна плаки</td>
                 <td class="second-column">Вес палки</td>
                 <td class="therd-column">Материал</td>
               </tr>
             </table>
           </div>
         </div>
+
+
+
+        <div class="slide-block fitnes-slide">
+          <div class="slide-photo fitnes-photo">
+            <img src="img/fitnes.png" alt="Фитнес браслет" width="347px" height="485px">
+          </div>
+          <div class="slide-info selfi-info">
+            <p class="block-number">02</p>
+            <h3>
+              Худеем <br>
+              правильно!
+            </h3>
+            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы <br> 
+               не пропускать занятия и соблюдать диету.</p>
+            <button class="detail" type="button" name="button">Подробнее</button>
+            <table>
+              <tr class="detail-row">
+                <td>48 часов</td>
+              </tr>
+              <tr class="detail-name">
+                <td>Без подзарядки</td>
+                
+              </tr>
+            </table>
+          </div>
         </div>
+
+        <div class="slide-block copter-slide">
+          <div class="slide-photo copter-photo">
+            <img src="img/copter.png" alt="Селфи палка" width="530px" height="340px">
+          </div>
+          <div class="slide-info copter-info">
+            <p class="block-number">03</p>
+            <h3>
+               Порхает как бабочка, <br>
+                жалит как пчела!
+            </h3>
+            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен 
+               мощным лазером, замаскированным под стандартную камеру.</p>
+            <button class="detail" type="button" name="button">Подробнее</button>
+            <table>
+              <tr class="detail-row">
+                <td class="first-column">800 м</td>
+                <td class="second-column">50 м</td>
+              </tr>
+              <tr class="detail-name">
+                <td class="first-column">Дальность полета</td>
+                <td class="second-column">Радиус Поражения</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
       </section>
     </main>
     <footer class="main-footer main-footer-absolute">

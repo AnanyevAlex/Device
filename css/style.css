@@ -370,11 +370,21 @@ a {
 .sales-hits {
   background-image: linear-gradient(to bottom, #f8e297 27%, #ffffff 27%);
   width: 100%;
-  min-height: 510px;
+  min-height: 530px;
 }
 
 .slide-block {
   display: flex;
+}
+
+.copter-slide,
+.selfi-slide,
+.fitnes-slide {
+  display: none;
+}
+
+.input-block {
+  width: 1160px;
 }
 
 .input-block {
@@ -386,13 +396,22 @@ a {
 }
 
 .slide-info {
-  width: 500px;
-
+  width: 540px;
 }
 
-.slide-photo img {
+.selfi-photo img {
   margin-top: 30px;
   margin-left: 90px;
+}
+
+.fitnes-photo img  {
+  margin-top: 40px;
+  margin-left: 115px;  
+}
+
+.copter-photo img {
+  margin-top: 90px;
+  margin-left: 30px;
 }
 
 .slide-info h3 {
@@ -404,12 +423,22 @@ a {
 }
 
 .slide-info p {
-  margin: 20px 0 0 8px;
+  margin: 20px 0 0 10px;
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.2px;
   line-height: 2;
+  width: 485px;
+}
+
+.copter-info h3 {
+  position: relative;
+  z-index: 5;
+}
+
+.copter-info .block-number {
+  z-index: 1;
 }
 
 .slide-info .detail {
@@ -450,18 +479,28 @@ a {
   font-weight: bold;
 }
 
-.slide-info .second-column {
-  padding-left: 30px;
+.slide-info::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 65px;
+  right: 460px;
+  width: 100px;
+  height: 7px;
+  background-color: #fff;
 }
 
 .slide-info .therd-column {
-  padding-left: 5px;
+  padding-left: 78px;
 }
 
 .slide-info table td {
   outline: 1px solid green;
-  width: 130px;
   height: 35px;
+}
+
+.first-column {
+  width: 155px;
 }
 
 .slide-info .detail-name {
@@ -475,12 +514,54 @@ a {
   font-size: 36px;
 }
 
-.input-block::after {
-  content: "";
-  left: 600px;
-  top: 65px;
+.input-block label {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  border-radius: 50%;
   position: absolute;
-  width: 100px;
-  height: 7px;
-  background-color: #fff;
+}
+
+.radio-selfi {
+  bottom: 155px;
+  right: 148px;
+}
+
+.radio-fitnes {
+  bottom: 155px;
+  right: 116px;
+}
+
+.radio-copter {
+  bottom: 155px;
+  right: 84px;
+}
+
+.slide-input:checked + label::after {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 3px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0.5px;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: red;
+}
+
+input#selfi-slide:checked ~ .selfi-slide {
+  display: flex;
+}
+
+input#fitnes-slide:checked ~ .fitnes-slide {
+  display: flex;
+}
+
+input#copter-slide:checked ~ .copter-slide {
+  display: flex;
 }
