@@ -385,7 +385,7 @@ a {
 
 
 .sales-hits {
-  background-image: linear-gradient(to bottom, #f8e297 27%, #ffffff 27%);
+  background-image: linear-gradient(to bottom, #f8e297 24%, #ffffff 24%);
   width: 100%;
   min-height: 510px;
 }
@@ -404,10 +404,7 @@ a {
 
 .input-block {
   width: 1160px;
-}
 
-.input-block {
-  position: absolute;
 }
 
 .slide-photo {
@@ -490,8 +487,8 @@ a {
 
 .slide-info .block-number {
   position: absolute;
-  top: -95px;
-  left: 922px;
+  top: 105px;
+  left: 920px;
   height: 0;
   font-size: 179px;
   color: #fff;
@@ -503,7 +500,7 @@ a {
   content: "";
   display: block;
   position: absolute;
-  top: 65px;
+  top: 265px;
   right: 460px;
   width: 100px;
   height: 7px;
@@ -543,17 +540,17 @@ a {
 }
 
 .radio-selfi {
-  top: 355px;
+  top: 555px;
   right: 148px;
 }
 
 .radio-fitnes {
-  top: 355px;
+  top: 555px;
   right: 116px;
 }
 
 .radio-copter {
-  top: 355px;
+  top: 555px;
   right: 84px;
 }
 
@@ -582,4 +579,31 @@ input#fitnes-slide:checked ~ .fitnes-slide {
 
 input#copter-slide:checked ~ .copter-slide {
   display: flex;
+}
+
+.price-menu {
+  background-color: lightblue;
+}
+
+.price-menu tr {
+  width 500px;
+}
+
+.price {
+  display: flex;
+}
+
+.price li {
+  width: 160px;
+  margin-right: 40px;
+}
+
+.price li:last-child {
+  margin-right: 0;
+}
+
+.price div {
+  width: 160px;
+  height: 160px;
+  background-color: #f7e296;
 }
