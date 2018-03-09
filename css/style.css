@@ -569,11 +569,11 @@ a {
   border: 1px solid #000;
   border-radius: 50%;
   position: absolute;
-  top: 0;
-  right: 0.5px;
+  top: 2.5px;
+  right: 0;
   bottom: 0;
-  left: 0;
-  margin: auto;
+  left: 2.5px;
+
 }
 
 input#selfi-slide:checked ~ .selfi-slide {
