@@ -404,6 +404,7 @@ a {
 
 .input-block {
   width: 1160px;
+  margin-bottom: 85px;
 
 }
 
@@ -585,9 +586,6 @@ input#copter-slide:checked ~ .copter-slide {
   background-color: lightblue;
 }
 
-.price-menu tr {
-  width 500px;
-}
 
 .price {
   display: flex;
@@ -606,4 +604,12 @@ input#copter-slide:checked ~ .copter-slide {
   width: 160px;
   height: 160px;
   background-color: #f7e296;
+}
+
+.price .title-price {
+  margin: 30px 0 0 0;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold; 
+  letter-spacing: 0.4px;
+  font-size: 17.5px;
 }
