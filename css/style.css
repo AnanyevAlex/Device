@@ -385,7 +385,7 @@ a {
 
 
 .sales-hits {
-  background-image: linear-gradient(to bottom, #f8e297 18%, #ffffff 18%);
+  background-image: linear-gradient(to bottom, #f8e297 16%, #ffffff 16%);
   width: 100%;
   min-height: 510px;
 }
@@ -404,31 +404,25 @@ a {
 
 .input-block {
   width: 1160px;
-  margin-bottom: 85px;
+  margin-bottom: 75px;
 
 }
 
 .slide-photo {
+  box-sizing: border-box;
   width: 590px;
+  padding: 30px 0;
+  padding-right: 27px;
+}
+
+.slide-photo img {
+  display: block;
+  margin: 0 auto;
 }
 
 .slide-info {
   width: 540px;
-}
-
-.selfi-photo img {
-  margin-top: 30px;
-  margin-left: 90px;
-}
-
-.fitnes-photo img  {
-  margin-top: 40px;
-  margin-left: 115px;  
-}
-
-.copter-photo img {
-  margin-top: 90px;
-  margin-left: 30px;
+  position: relative;
 }
 
 .slide-info h3 {
@@ -441,12 +435,16 @@ a {
 
 .slide-info p {
   margin: 20px 0 0 10px;
+  padding-right: 25px;
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   letter-spacing: 0.2px;
   line-height: 2;
-  width: 485px;
+}
+
+.copter-info p {
+  padding-right: 60px;
 }
 
 .copter-info h3 {
@@ -459,19 +457,21 @@ a {
 }
 
 .slide-info .detail {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
   margin: 43px 0 0 11px;
-  padding: auto;
-  border: none;
+  padding-top: 6px;
   width: 220px;
   height: 40px;
-  background-color: none;
-  outline: 0;
   background-image: linear-gradient(to bottom, #ffffff 37%, #e4c341 37%, #e4c341 60%, #ffffff 60%);
   font-size: 18px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 3.5px;
   text-transform: uppercase;
 }
+
+
 
 .slide-info .detail:hover {
   background: #e4c341;
@@ -488,9 +488,12 @@ a {
 
 .slide-info .block-number {
   position: absolute;
-  top: 105px;
-  left: 920px;
+  margin: 0;
+  padding: 0;
+  top: -75px;
+  right: 200px;
   height: 0;
+  width: 0;
   font-size: 179px;
   color: #fff;
   font-family: "Gilroy", Arial, sans-serif;
@@ -538,6 +541,9 @@ a {
   border: 1px solid #000;
   border-radius: 50%;
   position: absolute;
+  z-index: 1;
+  cursor: pointer;
+
 }
 
 .radio-selfi {
