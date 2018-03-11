@@ -392,8 +392,9 @@ a {
 
 .slide-block {
   display: flex;
-  min-height: 535px;
+  min-height: 585px;
   position: relative;
+  margin-bottom: 17px;
 }
 
 .copter-slide,
@@ -402,12 +403,6 @@ a {
   display: none;
 }
 
-.input-block {
-  position: relative;
-  width: 1160px;
-  margin-bottom: 75px;
-
-}
 
 .slide-photo {
   box-sizing: border-box;
@@ -505,8 +500,8 @@ a {
   content: "";
   display: block;
   position: absolute;
-  top: 265px;
-  right: 460px;
+  top: 65px;
+  left: 10px;
   width: 100px;
   height: 7px;
   background-color: #fff;
@@ -518,6 +513,7 @@ a {
 
 .slide-info table td {
   height: 35px;
+  padding: 2px 0 0 5px;
 }
 
 .first-column {
@@ -548,7 +544,6 @@ a {
 .toggles {
   display: flex;
   position: absolute;
-  outline: 1px solid red;
   top: 355px;
   right: 63px;
 }
