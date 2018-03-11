@@ -393,7 +393,7 @@ a {
 .slide-block {
   display: flex;
   min-height: 535px;
-
+  position: relative;
 }
 
 .copter-slide,
@@ -403,6 +403,7 @@ a {
 }
 
 .input-block {
+  position: relative;
   width: 1160px;
   margin-bottom: 75px;
 
@@ -534,34 +535,30 @@ a {
   font-size: 36px;
 }
 
-.input-block label {
+.toggles label {
   display: block;
   width: 10px;
   height: 10px;
   border: 1px solid #000;
   border-radius: 50%;
-  position: absolute;
   z-index: 1;
   cursor: pointer;
-
 }
 
-.radio-selfi {
-  top: 555px;
-  right: 148px;
+.toggles {
+  display: flex;
+  position: absolute;
+  outline: 1px solid red;
+  top: 355px;
+  right: 63px;
 }
 
-.radio-fitnes {
-  top: 555px;
-  right: 116px;
+.toggles label {
+  margin-right: 20px;
 }
 
-.radio-copter {
-  top: 555px;
-  right: 84px;
-}
 
-.slide-input:checked + label::after {
+#selfi-slide:checked ~ .toggles .radio-selfi::after {
   content: '';
   display: block;
   width: 3px;
@@ -573,8 +570,37 @@ a {
   right: 0;
   bottom: 0;
   left: 2.5px;
-
 }
+
+#fitnes-slide:checked ~ .toggles .radio-fitnes::after {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 3px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5px;
+  right: 0;
+  bottom: 0;
+  left: 2.5px;
+}
+
+
+#copter-slide:checked ~ .toggles .radio-copter::after {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 3px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5px;
+  right: 0;
+  bottom: 0;
+  left: 2.5px;
+}
+
 
 input#selfi-slide:checked ~ .selfi-slide {
   display: flex;
