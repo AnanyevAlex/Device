@@ -640,3 +640,9 @@ input#copter-slide:checked ~ .copter-slide {
   letter-spacing: 0.4px;
   font-size: 17.5px;
 }
+
+.svg-image svg {
+  display: block;
+  margin: 0 auto;
+  padding-top: 55px;
+}
