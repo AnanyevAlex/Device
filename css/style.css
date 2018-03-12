@@ -533,6 +533,7 @@ a {
 
 .toggles label {
   display: block;
+  position: relative;
   width: 10px;
   height: 10px;
   border: 1px solid #000;
@@ -634,11 +635,16 @@ input#copter-slide:checked ~ .copter-slide {
 }
 
 .price .title-price {
-  margin: 30px 0 0 0;
+  margin: 35px 0 0 0;
+  line-height: 23px;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold; 
   letter-spacing: 0.4px;
   font-size: 17.5px;
+}
+
+.svg-selfi p {
+  padding-right: 35px;
 }
 
 .svg-image svg {
