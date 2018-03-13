@@ -89,7 +89,7 @@ a {
   padding: 85px 60px 0 60px;
   width: 1160px;
   min-height: 200px;
-  background-image: linear-gradient(to bottom, #ffffff 19%, #f8e297 19%);
+  background-image: linear-gradient(to bottom, #ffffff 19%, #f1e1a0 19%);
 }
 
 .header-logo {
@@ -325,7 +325,7 @@ a {
   position: absolute;
   display: flex;
   visibility: hidden;
-  background-color: #f8e297;
+  background-color: #f1e1a0;
   box-sizing: border-box;
   padding: 0 60px;
   width: 1160px;
@@ -385,7 +385,7 @@ a {
 
 
 .sales-hits {
-  background-image: linear-gradient(to bottom, #f8e297 16%, #ffffff 16%);
+  background-image: linear-gradient(to bottom, #f1e1a0 16%, #ffffff 16%);
   width: 100%;
   min-height: 510px;
 }
@@ -394,7 +394,7 @@ a {
   display: flex;
   min-height: 585px;
   position: relative;
-  margin-bottom: 17px;
+  margin-bottom: 35px;
 }
 
 .copter-slide,
@@ -478,7 +478,7 @@ a {
   color: rgba(0, 0, 0, 0.302);
 }
 
-.slide-info table {
+.product-description {
   margin: 55px 0 0 5px;
 }
 
@@ -511,9 +511,9 @@ a {
   padding-left: 78px;
 }
 
-.slide-info table td {
+.product-description td {
   height: 35px;
-  padding: 2px 0 0 5px;
+  padding: 1px 0 0 2px;
 }
 
 .first-column {
@@ -631,7 +631,15 @@ input#copter-slide:checked ~ .copter-slide {
 .price div {
   width: 160px;
   height: 160px;
-  background-color: #f7e296;
+  background-color: #f1e1a0;
+}
+
+.price li:hover .svg-image {
+  background-color: #e4c341;
+}
+
+.price li:active path {
+  fill: rgba(0, 0, 0, 0.3);
 }
 
 .price .title-price {
@@ -643,7 +651,7 @@ input#copter-slide:checked ~ .copter-slide {
   font-size: 17.5px;
 }
 
-.svg-selfi p {
+.title-selfi {
   padding-right: 35px;
 }
 
@@ -674,4 +682,18 @@ input#copter-slide:checked ~ .copter-slide {
 
 .svg-copter svg {
   padding-top: 50px;
+}
+
+.service {
+  width: 100%;
+  outline: 1px solid blue;
+  background-image: linear-gradient(to bottom, #fff 38%, #e4e4e4 38%);
+}
+
+.service-slider {
+  width: 100%;
+  min-height: 468px;
+  outline: 2px solid red;
+  background-image: linear-gradient(to bottom, #fff 38%, #e4e4e4 38%);
+
 }
