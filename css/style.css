@@ -691,9 +691,39 @@ input#copter-slide:checked ~ .copter-slide {
 }
 
 .service-slider {
+  display: flex;
   width: 100%;
   min-height: 468px;
   outline: 2px solid red;
   background-image: linear-gradient(to bottom, #fff 38%, #e4e4e4 38%);
 
+}
+
+.toggles-service {
+  width: 400px;
+  outline: 1px solid red;
+}
+
+.slide-delivery {
+  width: 500px;
+  min-height: 468px;
+  outline: 1px solid green;
+}
+
+.delivery-info h3 {
+    font-size: 47px;
+  font-weight: bold;
+  margin: 154px 0 0 2px;
+  line-height: 1.2;
+  letter-spacing: 0.7px;
+}
+
+.delivery-info p {
+    margin: 20px 0 0 10px;
+  padding-right: 25px;
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  line-height: 2;
 }
