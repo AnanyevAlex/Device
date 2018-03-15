@@ -694,36 +694,67 @@ input#copter-slide:checked ~ .copter-slide {
   display: flex;
   width: 100%;
   min-height: 468px;
-  outline: 2px solid red;
+
   background-image: linear-gradient(to bottom, #fff 38%, #e4e4e4 38%);
 
 }
 
 .toggles-service {
-  width: 400px;
-  outline: 1px solid red;
+  box-sizing: border-box;
+  width: 284px;
+  margin-top: 81px;
+  padding-top: 80px;
+  height: 319px;
+  border-right: 7px solid #000;
+}
+
+.toggles-service label {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .slide-delivery {
-  width: 500px;
+  width: 876px;
+  display: flex;
   min-height: 468px;
   outline: 1px solid green;
 }
 
+.delivery-info {
+  box-sizing: border-box;
+  padding: 150px 0 0 117px ;
+  width: 610px;
+  outline: 1px solid gray;
+}
+
 .delivery-info h3 {
-    font-size: 47px;
+  margin: 0;
+  font-size: 47px;
   font-weight: bold;
-  margin: 154px 0 0 2px;
   line-height: 1.2;
   letter-spacing: 0.7px;
 }
 
 .delivery-info p {
-    margin: 20px 0 0 10px;
+  margin-top: 28px;
   padding-right: 25px;
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.3px;
   line-height: 2;
+}
+
+.delivery-photo {
+  outline: 1px solid blue;
+  padding-top: 165px;
+  width: 266px;
+}
+
+.delivery-photo svg {
+  display: block;
+  margin: 0 auto;
+
 }
