@@ -89,7 +89,7 @@ a {
   padding: 85px 60px 0 60px;
   width: 1160px;
   min-height: 200px;
-  background-image: linear-gradient(to bottom, #ffffff 19%, #f1e1a0 19%);
+  background-image: linear-gradient(to bottom, #ffffff 19%, #f8e297 19%);
 }
 
 .header-logo {
@@ -325,7 +325,7 @@ a {
   position: absolute;
   display: flex;
   visibility: hidden;
-  background-color: #f1e1a0;
+  background-color: #f8e297;
   box-sizing: border-box;
   padding: 0 60px;
   width: 1160px;
@@ -385,7 +385,7 @@ a {
 
 
 .sales-hits {
-  background-image: linear-gradient(to bottom, #f1e1a0 16%, #ffffff 16%);
+  background-image: linear-gradient(to bottom, #f8e297 16%, #ffffff 16%);
   width: 100%;
   min-height: 510px;
 }
@@ -460,7 +460,7 @@ a {
   padding-top: 6px;
   width: 220px;
   height: 40px;
-  background-image: linear-gradient(to bottom, #ffffff 37%, #e4c341 37%, #e4c341 60%, #ffffff 60%);
+  background-image: linear-gradient(to bottom, #ffffff 37%, #e4c341 37%, #e4c341 57%, #ffffff 57%);
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 3.5px;
@@ -631,7 +631,7 @@ input#copter-slide:checked ~ .copter-slide {
 .price div {
   width: 160px;
   height: 160px;
-  background-color: #f1e1a0;
+  background-color: #f8e297;
 }
 
 .price li:hover .svg-image {
@@ -686,50 +686,64 @@ input#copter-slide:checked ~ .copter-slide {
 
 .service {
   width: 100%;
-  outline: 1px solid blue;
-  background-image: linear-gradient(to bottom, #fff 38%, #e4e4e4 38%);
+  background-image: linear-gradient(to bottom, #fff 39%, #e4e4e4 39%);
 }
 
 .service-slider {
   display: flex;
   width: 100%;
   min-height: 468px;
-
-  background-image: linear-gradient(to bottom, #fff 38%, #e4e4e4 38%);
-
+  position: relative;
+  background-color: transparent;
 }
 
 .toggles-service {
   box-sizing: border-box;
   width: 284px;
   margin-top: 81px;
-  padding-top: 80px;
+  padding-top: 86px;
   height: 319px;
   border-right: 7px solid #000;
 }
 
 .toggles-service label {
   display: block;
+  width: 160px;
+  text-align: center;
+  margin-bottom: 39px;
   font-weight: bold;
   font-size: 18px;
+  letter-spacing: 3.5px;
   text-transform: uppercase;
+  background-image: linear-gradient(to bottom, transparent 37%, #e4c341 37%, #e4c341 60%, transparent 60%);
 }
 
-.slide-delivery {
+.slide-delivery,
+.slide-warranty,
+.slide-credit {
   width: 876px;
-  display: flex;
+  position: absolute;
+  left: 284px;
   min-height: 468px;
-  outline: 1px solid green;
 }
 
-.delivery-info {
+.slide-delivery,
+.slide-warranty,
+.slide-credit {
+  display: none;
+}
+
+.delivery-info,
+.warranty-info,
+.credit-info {
   box-sizing: border-box;
   padding: 150px 0 0 117px ;
   width: 610px;
-  outline: 1px solid gray;
 }
 
-.delivery-info h3 {
+.delivery-info h3,
+.warranty-info h3,
+.credit-info h3 {
   margin: 0;
   font-size: 47px;
   font-weight: bold;
@@ -737,7 +751,9 @@ input#copter-slide:checked ~ .copter-slide {
   letter-spacing: 0.7px;
 }
 
-.delivery-info p {
+.delivery-info p,
+.warranty-info p,
+.credit-info p {
   margin-top: 28px;
   padding-right: 25px;
   font-family: "OpenSans", Arial, sans-serif;
@@ -747,14 +763,36 @@ input#copter-slide:checked ~ .copter-slide {
   line-height: 2;
 }
 
+.credit-info p {
+  padding-right: 55px;
+}
+
 .delivery-photo {
-  outline: 1px solid blue;
   padding-top: 165px;
   width: 266px;
 }
 
-.delivery-photo svg {
+.warranty-photo,
+.credit-photo {
+  padding-top: 140px;
+  width: 266px;
+}
+
+.delivery-photo svg,
+.warranty-photo svg,
+.credit-photo svg {
   display: block;
   margin: 0 auto;
+}
 
+input#delivery-slide:checked ~ .slide-delivery {
+  display: flex;
+}
+
+input#warranty-slide:checked ~ .slide-warranty {
+  display: flex;
+}
+
+input#credit-slide:checked ~ .slide-credit {
+  display: flex;
 }
