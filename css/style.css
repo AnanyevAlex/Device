@@ -634,7 +634,7 @@ input#copter-slide:checked ~ .copter-slide {
   background-color: #f8e297;
 }
 
-.price li:hover .svg-image {
+.price li:hover .price-image {
   background-color: #e4c341;
 }
 
@@ -655,32 +655,32 @@ input#copter-slide:checked ~ .copter-slide {
   padding-right: 35px;
 }
 
-.svg-image svg {
+.price-image svg {
   display: block;
   margin: 0 auto;
   padding-top: 55px;
 }
 
-.svg-selfi svg {
+.photo-selfi svg {
   padding-top: 43px;
 }
 
-.svg-action svg {
+.photo-action svg {
   padding-top: 40px;
   padding-left: 10px;
 }
 
-.svg-fitnes svg {
+.photo-fitnes svg {
   padding-top: 52px;
   padding-left: 5px;
 }
 
-.svg-clock svg {
+.photo-clock svg {
   padding-left: 7px;
   padding-top: 33px;
 }
 
-.svg-copter svg {
+.photo-copter svg {
   padding-top: 50px;
 }
 
@@ -701,16 +701,19 @@ input#copter-slide:checked ~ .copter-slide {
   box-sizing: border-box;
   width: 284px;
   margin-top: 81px;
-  padding-top: 86px;
+  padding-top: 82px;
   height: 319px;
   border-right: 7px solid #000;
 }
 
 .toggles-service label {
+  box-sizing: border-box;
   display: block;
   width: 160px;
+  height: 39px;
   text-align: center;
-  margin-bottom: 39px;
+  margin-bottom: 28px;
+  padding-top: 4px;
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 3.5px;
@@ -796,3 +799,17 @@ input#warranty-slide:checked ~ .slide-warranty {
 input#credit-slide:checked ~ .slide-credit {
   display: flex;
 }
+
+.toggles-service label:hover {
+  background-color: #e4c341;
+}
+
+#delivery-slide:checked ~ .toggles-service .delivery-label,
+#warranty-slide:checked ~ .toggles-service .warranty-label,
+#credit-slide:checked ~ .toggles-service .credit-label {
+  background: #000;
+  width: 100%;
+  color: #f7e184;
+  padding-right: 113px;
+}
+
