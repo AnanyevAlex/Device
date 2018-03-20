@@ -813,7 +813,7 @@ input#credit-slide:checked ~ .slide-credit {
   padding-right: 113px;
 }
 
-.about-us {
+.about-us-block {
   display: block;
   position: relative;
   width: 100%;
@@ -823,6 +823,7 @@ input#credit-slide:checked ~ .slide-credit {
 .partners-block {
   display: flex;
   margin-top: 96px;
+  margin-bottom: 75px;
   width: 100%;
   height: 95px;
 }
@@ -870,4 +871,85 @@ input#credit-slide:checked ~ .slide-credit {
 
 .partners-block .partner-4:hover {
   background-image: url(../img/partners-hover-4.png);
+}
+
+.about-us {
+  display: flex;
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  padding-top: 46px;
+  outline: 1px solid red;
+}
+
+.about-us-info {
+  width: 598px;
+  outline: 1px solid blue;
+}
+
+.device-contacts {
+  outline: 1px solid blue;
+  width: 562px;
+}
+
+.about-us-info h2,
+.device-contacts h2 {
+  margin: 40px 0 56px 0;
+  font-weight: bold;
+  font-size: 47px;
+}
+
+.about-us-info p,
+.device-contacts p {
+  font-family: "OpenSans", Arial, sans-serif;
+  margin: 0;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  line-height: 28px;
+}
+
+.about-us-info p {
+  padding-right: 150px;
+  margin-bottom: 34px;
+}
+
+.device-contacts p {
+  margin-bottom: 40px;
+}
+
+.about-us-info .second-row {
+  padding-right: 115px;
+  margin-bottom: 75px;
+}
+
+.about-us-info ul {
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 17px;
+}
+
+.about-us li {
+  margin-bottom: 14px;
+  padding-left: 20px;
+  letter-spacing: 1.2px;
+}
+
+.about-us ul {
+  list-style-type: circle;
+}
+
+.about-us-info .detail {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 62px 0 0 0;
+  padding-top: 6px;
+  width: 220px;
+  height: 40px;
+  background-image: linear-gradient(to bottom, #ffffff 37%, #e4c341 37%, #e4c341 57%, #ffffff 57%);
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 3.7px;
+  text-transform: uppercase;
 }
