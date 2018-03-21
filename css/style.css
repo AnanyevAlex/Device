@@ -722,7 +722,7 @@ input#copter-slide:checked ~ .copter-slide {
   font-size: 18px;
   letter-spacing: 3.5px;
   text-transform: uppercase;
-  background-image: linear-gradient(to bottom, transparent 37%, #e4c341 37%, #e4c341 60%, transparent 60%);
+  background-image: linear-gradient(to bottom, transparent 34%, #e4c341 34%, #e4c341 53%, transparent 53%);
 }
 
 .slide-delivery,
