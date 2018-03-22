@@ -974,12 +974,12 @@ input#credit-slide:checked ~ .slide-credit {
 
 .main-footer {
   width: 100%;
-  height: 250px;
+  min-height: 323px;
   background-color: #474747;
 }
 
 .container-footer {
-  outline: 1px solid red;
+  min-height: 323px;
   padding-top: 65px;
   background-color: transparent;
 }
@@ -987,7 +987,7 @@ input#credit-slide:checked ~ .slide-credit {
 .footer-user-block {
   display: flex;
   width: 1160px;
-  outline: 1px solid green;
+
 }
 
 .footer-user-block a {
@@ -1009,6 +1009,14 @@ input#credit-slide:checked ~ .slide-credit {
 
 .footer-user-block .footer-logo {
   width: 823px;
+}
+
+.footer-logo:hover {
+  opacity: 0.7;
+}
+
+.footer-logo:active {
+  opacity: 0.3;
 }
 
 .footer-user-block .user-login {
@@ -1058,15 +1066,51 @@ input#credit-slide:checked ~ .slide-credit {
   right: 70px;
 }
 
+.footer-info-block {
+  display: flex;
+  margin-bottom: 63px;
+}
+
+.footer-info-block a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 27px 38px 0 0;
+}
+
+.footer-info-block a:nth-child(4) {
+  margin-right: 205px;
+}
+
+.footer-info-block a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-info-block a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 .footer-info-block p {
+  font-family: "Open Sans-Light", Arial, sans-serif;
+  margin: 0;
+  margin-top: 25px;
+  letter-spacing: 0.4px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.footer-info-block .address {
   position: relative;
   font-family: "Open Sans-Light", Arial, sans-serif;
   margin: 0;
-  letter-spacing: 0.4px;
-  color: #fff;
+  margin-top: 25px;
+  margin-right: 168px;
 }
 
-.footer-info-block p:after {
+.footer-info-block .address:after {
   content: "";
   position: absolute;
   display: block;
@@ -1076,7 +1120,39 @@ input#credit-slide:checked ~ .slide-credit {
   background-color: #f0c52e;
 }
 
-.footer-login-link:hover svg {
-  fill: #f00
+ .address {
+  margin-top: 25px;
+ }
 
+ .footer-social {
+  display: flex;
+  position: relative;
+  outline: 1px solid green;
+ }
+
+ .footer-social .social {
+  display: flex;
+  width: 150px;
+  margin-left: 509px;
+  margin-right: 400px;
+  outline: 1px solid red;
+ }
+
+ .social-fb,
+ .social-insta {
+  margin-right: 22px;
+ }
+
+ .html-logo {
+    width: 30px;
+    height: 40px;
+    margin-left: 485px;
+ }
+
+ .html-logo:hover {
+  opacity: 0.7;
+ }
+
+ .html-logo:active {
+  opacity: 0.3;
  }
