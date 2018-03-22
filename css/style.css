@@ -984,12 +984,81 @@ input#credit-slide:checked ~ .slide-credit {
   background-color: transparent;
 }
 
-.footer-logo a {
-  display: block;
-  margin-bottom: 25px;
+.footer-user-block {
+  display: flex;
+  width: 1160px;
+  outline: 1px solid green;
 }
 
-.footer-logo p {
+.footer-user-block a {
+  font-family: "Open Sans-Light", Arial, sans-serif;
+  font-size: 15px;
+  color: #fff;
+  opacity: 0.7;
+}
+/**
+.footer-user-block a:hover,
+.footer-user-block a:hover ~ .footer-login-link {
+  opacity: 1;
+} 
+**/
+
+.login:hover {
+  opacity: 0.2;
+}
+
+.footer-user-block .footer-logo {
+  width: 823px;
+}
+
+.footer-user-block .user-login {
+  width: 115px;
+}
+
+.footer-user-block .footer-buy-navigation {
+  display: flex;
+  width: 222px;
+}
+
+.footer-buy-navigation li:first-child {
+  margin-right: 38px;
+}
+
+.footer-buy-navigation li {
+  padding-left: 30px;
+}
+
+.footer-user-block svg {
+  position: absolute;
+  top: 72px;
+}
+
+.footer-user-block path {
+  fill: #f0c52e;
+  opacity: 0.7;
+}
+
+.footer-login-link {
+  padding-left: 28px;
+}
+
+.footer-login-link a {
+  padding: 0;
+}
+
+.footer-login-link svg {
+  right: 312px;
+}
+
+.footer-compare svg {
+  right: 202px;
+}
+
+.footer-basket svg {
+  right: 70px;
+}
+
+.footer-info-block p {
   position: relative;
   font-family: "Open Sans-Light", Arial, sans-serif;
   margin: 0;
@@ -997,7 +1066,7 @@ input#credit-slide:checked ~ .slide-credit {
   color: #fff;
 }
 
-.footer-logo p:after {
+.footer-info-block p:after {
   content: "";
   position: absolute;
   display: block;
@@ -1006,3 +1075,8 @@ input#credit-slide:checked ~ .slide-credit {
   top: 104px;
   background-color: #f0c52e;
 }
+
+.footer-login-link:hover svg {
+  fill: #f00
+
+ }
