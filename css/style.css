@@ -20,7 +20,7 @@
 }
 
 @font-face{
- font-family: "OpenSans Light"; /* Гарнитура шрифта */
+ font-family: "OpenSans"; /* Гарнитура шрифта */
  src: url(../fonts/OpenSans-Regular.ttf) format('truetype'); /* Путь к файлу со шрифтом */
  font-weight: normal;
  font-style:normal;
@@ -471,15 +471,19 @@ a {
 
 .slide-info .detail:hover,
 .about-us-info .detail:hover,
-.device-contacts .write-us:hover {
+.device-contacts .write-us:hover,
+.user-info .send-feedback:hover {
   background: #e4c341;
+  outline: none;
 }
 
 .slide-info .detail:active,
 .about-us-info .detail:active,
-.device-contacts .write-us:active {
+.device-contacts .write-us:active,
+.user-info .send-feedback:active {
   background-color: #e4c341;
   color: rgba(0, 0, 0, 0.302);
+  outline: none;
 }
 
 .product-description {
@@ -909,6 +913,7 @@ input#credit-slide:checked ~ .slide-credit {
 }
 
 .device-contacts {
+  position: relative;
   width: 562px;
 }
 
@@ -1075,20 +1080,24 @@ input#credit-slide:checked ~ .slide-credit {
 
 .footer-info-block {
   display: flex;
-  margin-bottom: 48px;
-  padding-top: 26px;
+  margin-bottom: 62px;
+  padding-top: 25px;
 }
 
 .footer-service-block {
   display: flex;
   flex-wrap: wrap;
-  width: calc(445px + 30px);
-  margin: 0 -15px;
+  width: 432px;
+  margin-right: 200px;
 }
 
 .footer-service-block li {
-  width: calc(33% - 30px);
-  margin: 0 15px 15px;
+  width: 125px;
+}
+
+.footer-service-block li:nth-child(2) {
+  flex-grow: 1;
+  text-align: center;
 }
 
 .footer-info-block a {
@@ -1185,3 +1194,102 @@ input#credit-slide:checked ~ .slide-credit {
 .html-logo:active {
   opacity: 0.3;
  }
+
+
+ /* MODAL FORM*/
+
+.modal {
+  position: fixed;
+  display: none;
+  background-color: #fff;
+  z-index: 10;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+
+}
+
+.modal-feedback {
+  box-sizing: border-box;
+  top: 120px;
+  left: 38.2%;
+  min-height: 553px;
+  width: 960px;
+  margin-left: -230px;
+  padding: 80px 100px;
+}
+
+.modal-close {
+  position: absolute;
+  outline: none;
+  top: 24px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user-info p {
+  margin: 0;
+  padding: 13px 0 0 0;
+  width: 362px;
+}
+
+.user-info input {
+  box-sizing: border-box;
+  width: 360px;
+  height: 50px;
+  padding-left: 20px;
+  margin-top: 6px;
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 14px;
+  border: none;
+  background-color: #f1f1f1;
+}
+
+.user-info label {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.user-info .write-us-block {
+  width: 760px;
+  margin: 20px 0 0 0;
+
+}
+
+.write-us-block textarea {
+  box-sizing: border-box;
+  width: 760px;
+  font-family: "OpenSans", Arial, sans-serif;
+  color: #757575;
+  margin: 5px 0 0 0;
+  padding: 16px 19px;
+  font-size: 14px;
+  border: none;
+  background-color: #f1f1f1;
+}
+
+.user-info .send-feedback {
+  border: none;
+  display: block;
+  outline: none;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 22px 0 0 0;
+  width: 201px;
+  height: 35px;
+  background-image: linear-gradient(to bottom, #ffffff 35%, #e4c341 35%, #e4c341 60%, #ffffff 60%);
+  font-size: 18px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+}
+
