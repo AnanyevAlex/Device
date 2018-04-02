@@ -88,8 +88,8 @@ a {
   box-sizing: border-box;
   padding: 85px 60px 0 60px;
   width: 1160px;
-  min-height: 200px;
-  background-image: linear-gradient(to bottom, #ffffff 19%, #f8e297 19%);
+  min-height: 226px;
+  background-image: linear-gradient(to bottom, #ffffff 18%, #f8e297 18%);
 }
 
 .header-logo {
@@ -155,7 +155,7 @@ a {
 .found::before {
   content: "";
   position: absolute;
-  top: 46%;
+  top: 41%;
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
@@ -385,7 +385,7 @@ a {
 
 
 .sales-hits {
-  background-image: linear-gradient(to bottom, #f8e297 16%, #ffffff 16%);
+  background-image: linear-gradient(to bottom, #f8e297 14%, #ffffff 14%);
   width: 100%;
   min-height: 510px;
 }
@@ -394,7 +394,7 @@ a {
   display: flex;
   min-height: 585px;
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 7px;
 }
 
 .copter-slide,
@@ -407,7 +407,7 @@ a {
 .slide-photo {
   box-sizing: border-box;
   width: 590px;
-  padding: 30px 0;
+  padding: 3px 0;
   padding-right: 27px;
 }
 
@@ -424,7 +424,7 @@ a {
 .slide-info h3 {
   font-size: 47px;
   font-weight: bold;
-  margin: 107px 0 0 8px;
+  margin: 80px 0 0 8px;
   line-height: 1.2;
   letter-spacing: 0.7px;
 }
@@ -446,10 +446,6 @@ a {
 .copter-info h3 {
   position: relative;
   z-index: 2;
-}
-
-.copter-info .block-number {
-  z-index: 1;
 }
 
 .slide-info .detail {
@@ -494,11 +490,12 @@ a {
   position: absolute;
   margin: 0;
   padding: 0;
-  top: -75px;
+  top: -102px;
   right: 200px;
   height: 0;
   width: 0;
   font-size: 179px;
+  z-index: 1;
   color: #fff;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
@@ -508,7 +505,7 @@ a {
   content: "";
   display: block;
   position: absolute;
-  top: 65px;
+  top: 40px;
   left: 10px;
   width: 100px;
   height: 7px;
@@ -553,7 +550,7 @@ a {
 .toggles-sales-hits {
   display: flex;
   position: absolute;
-  top: 355px;
+  top: 330px;
   right: 63px;
 }
 
@@ -834,7 +831,7 @@ input#credit-slide:checked ~ .slide-credit {
   display: flex;
   flex-wrap: wrap;
   margin-top: 96px;
-  margin-bottom: 75px;
+  margin-bottom: 79px;
   width: 100%;
   height: 95px;
 }
@@ -920,7 +917,7 @@ input#credit-slide:checked ~ .slide-credit {
 .about-us-info h2,
 .device-contacts h2 {
   line-height: 50px;
-  margin: 27px 0 44px 0;
+  margin: 27px 0 42px 0;
   font-weight: bold;
   font-size: 47px;
 }
@@ -979,6 +976,15 @@ input#credit-slide:checked ~ .slide-credit {
   font-weight: bold;
   letter-spacing: 3.7px;
   text-transform: uppercase;
+}
+
+.page-title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 47px;
+  margin: 0;
+  padding: 49px 0 0 58px;
+  letter-spacing: 0.6px;
 }
 
 .main-footer {
@@ -1082,7 +1088,7 @@ input#credit-slide:checked ~ .slide-credit {
 .footer-info-block {
   display: flex;
   margin-bottom: 62px;
-  padding-top: 25px;
+  padding-top: 27px;
 }
 
 .footer-service-block {
