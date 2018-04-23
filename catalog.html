@@ -121,12 +121,43 @@
             </fieldset>
             <fieldset>
               <legend>Цвет</legend>
-              <ul>
+              <ul class="mod-list">
                 <li>
-                  <input type="checkbox" name="color" value="" >
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="color" id="black" value="Черный" checked>
+                  <label for="black">Черный</label>
+                </li>
+                <li>
+                  <input class="visually-hidden filter-checkbox"  type="checkbox" name="color" id="white" value="Белый" >
+                  <label for="white">Белый</label>
+                </li>
+                <li>
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="color" id="blue" value="Синий" checked>
+                  <label for="blue">Синий</label>
+                </li>
+                <li>
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="color" id="red" value="Красный" checked>
+                  <label for="red">Красный</label>
+                </li>
+                <li>
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="color" id="pink" value="Розовый" >
+                  <label for="pink">Розовый</label>
                 </li>
               </ul>
             </fieldset>
+            <fieldset>
+              <legend>Bluetooth</legend>
+              <ul class="mod-list">
+                <li>
+                  <input class="visually-hidden filter-radio" type="radio" name="Bluetooth" id="bt-yes" value="Есть">
+                  <label for="bt-yes">Есть</label>
+                </li>
+                <li>
+                  <input class="visually-hidden filter-radio"  type="radio" name="Bluetooth" id="bt-no" value="Нет" >
+                  <label for="bt-no">Нет</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="show-item-list" type="submit">Показать</button>
           </form>
         </div>
         <div class="catalog-item">

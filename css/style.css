@@ -230,7 +230,6 @@ a {
   visibility: hidden;
 }
 
-
 .btn-found-form:hover  {
   color: rgb(255, 255, 255);
   background-color: #000;
@@ -244,7 +243,6 @@ a {
 .input-find {
   width: 355px;
   padding-left: 40px;
-
 }
 
 .input-find:focus {
@@ -471,7 +469,8 @@ a {
 .about-us-info .detail:hover,
 .device-contacts .write-us:hover,
 .user-info .send-feedback:hover,
-.item-block-hover .add-basket:hover {
+.item-block-hover .add-basket:hover,
+.price-checkbox-form .show-item-list:hover {
   background: #e4c341;
   outline: none;
 }
@@ -480,9 +479,10 @@ a {
 .about-us-info .detail:active,
 .device-contacts .write-us:active,
 .user-info .send-feedback:active,
-.item-block-hover .add-basket:active {
+.item-block-hover .add-basket:active,
+.price-checkbox-form .show-item-list:active {
   background-color: #e4c341;
-  color: rgba(0, 0, 0, 0.302);
+  color: rgba(0, 0, 0, 0.3);
   outline: none;
 }
 
@@ -1081,7 +1081,6 @@ input#credit-slide:checked ~ .slide-credit {
   box-sizing: border-box;
   padding-left: 58px;
   width: 400px;
-  outline: 2px solid green;
   min-height: 326px;
 }
 
@@ -1101,8 +1100,7 @@ input#credit-slide:checked ~ .slide-credit {
   padding-top: 10px;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
-  font-size: 16px;
-  letter-spacing: 1.5px;
+  font-size: 18px;
 }
 
 .price-checkbox-form .scale {
@@ -1117,10 +1115,17 @@ input#credit-slide:checked ~ .slide-credit {
 .scale .toggle-max {
   position: absolute;
   top: -9px;
-  width: 20px;
-  height: 22px;
+  width: 22px;
+  height: 25px;
   z-index: 1;
   left: -6px;
+  cursor: pointer;
+}
+
+.scale .toggle-min:active svg,
+.scale .toggle-max:active svg{
+  width: 22px;
+  height: 25px;
 }
 
 .scale .toggle-max {
@@ -1144,13 +1149,75 @@ input#credit-slide:checked ~ .slide-credit {
   margin-right: 60px;
 }
 
+.mod-list {
+  margin: 0 0 24px 0;
+  padding: 23px 0 0 0;
+}
+
+.mod-list li {
+  height: 40px;
+}
+
+.mod-list label {
+  position: relative;
+  font-size: 14px;
+  padding-left: 37px;
+  font-family: "Open Sans-Light", Arial, sans-serif;
+  font-size: 15px;
+}
+
+.show-item-list {
+  width: 200px;
+  height: 40px;
+  border: 0;
+  background-image: linear-gradient(to bottom, #ebebeb 37%, #e4c341 37%, #e4c341 57%, #ebebeb 57%);
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+}
+
+.filter-checkbox + label::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: -1px;
+  top: -4px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-radio + label::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: -1px;
+  top: -4px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-radio:checked + label::before {
+  background-image: url("../img/radio-on.svg");
+}
+
+.filter-checkbox:checked + label::before {
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-radio + label:hover::before,
+.filter-checkbox + label:hover::before {
+  opacity: 0.3;
+}
 
 .catalog-item {
   width: 760px;
   padding-top: 70px;
-  outline: 2px solid red;
 }
-
 
 .catalog-item .item-list {
   display: flex;
@@ -1305,16 +1372,6 @@ input#credit-slide:checked ~ .slide-credit {
   color: rgba(0, 0, 0, 0.3);
 }
 
-
-
-
-
-
-
-
-
-
-
 .main-footer {
   width: 100%;
   min-height: 323px;
@@ -1450,7 +1507,6 @@ input#credit-slide:checked ~ .slide-credit {
   color: rgba(255, 255, 255, 0.3);
 }
 
-
 .footer-info-block p {
   font-family: "Open Sans-Light", Arial, sans-serif;
   margin: 0;
@@ -1478,12 +1534,12 @@ input#credit-slide:checked ~ .slide-credit {
 
 .address {
   margin-top: 25px;
- }
+}
 
 .footer-social {
   display: flex;
   position: relative;
- }
+}
 
 .footer-social .social {
   display: flex;
@@ -1495,38 +1551,37 @@ input#credit-slide:checked ~ .slide-credit {
 .social-fb,
 .social-insta {
   margin-right: 22px;
- }
+}
 
 .social path {
   opacity: 0.6;
- }
+}
 
 .social-fb svg:hover path,
 .social-insta svg:hover path,
 .social-tw svg:hover path {
   opacity: 1;
- }
+}
 
 .social-fb svg:active path,
 .social-insta svg:active path,
 .social-tw svg:active path {
   opacity: 0.3;
- }
+}
 
 .html-logo {
   width: 30px;
   height: 40px;
   margin-left: 485px;
- }
+}
 
 .html-logo:hover {
   opacity: 0.7;
- }
+}
 
 .html-logo:active {
   opacity: 0.3;
- }
-
+}
 
  /* MODAL FORM*/
 
