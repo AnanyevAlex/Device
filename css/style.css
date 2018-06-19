@@ -1,27 +1,27 @@
 @font-face{
  font-family: "Gilroy"; /* Гарнитура шрифта */
- src: url(../fonts/Gilroyextrabold.ttf) format('truetype'); /* Путь к файлу со шрифтом */
+ src: url(../fonts/Gilroyextrabold.ttf) format("truetype"); /* Путь к файлу со шрифтом */
  font-weight:bold;
  font-style:normal;
 }
 
 @font-face{
  font-family: "Gilroy"; /* Гарнитура шрифта */
- src: url(../fonts/Gilroylight.ttf) format('truetype'); /* Путь к файлу со шрифтом */
+ src: url(../fonts/Gilroylight.ttf) format("truetype"); /* Путь к файлу со шрифтом */
  font-weight: normal;
  font-style:normal;
 }
 
 @font-face{
  font-family: "OpenSans Light"; /* Гарнитура шрифта */
- src: url(../fonts/OpenSans-Light.ttf) format('truetype'); /* Путь к файлу со шрифтом */
+ src: url(../fonts/OpenSans-Light.ttf) format("truetype"); /* Путь к файлу со шрифтом */
  font-weight: 300;
  font-style:normal;
 }
 
 @font-face{
  font-family: "OpenSans"; /* Гарнитура шрифта */
- src: url(../fonts/OpenSans-Regular.ttf) format('truetype'); /* Путь к файлу со шрифтом */
+ src: url(../fonts/OpenSans-Regular.ttf) format("truetype"); /* Путь к файлу со шрифтом */
  font-weight: normal;
  font-style:normal;
 }
@@ -39,8 +39,7 @@ body {
 
 .container {
   position: relative;
-  max-width: 1160px;
-  min-width: 768px;
+  width: 1160px;
   margin: 0 auto;
   background-color: #ffffff;
   box-sizing: border-box;
@@ -94,7 +93,7 @@ a {
 
 .header-logo {
   position: absolute;
-  top: 20px;
+  top: 22px;
   left: 60px;
 }
 
@@ -203,7 +202,7 @@ a {
 .user-navigation,
 .buy-navigation {
   border: none;
-  background-color: inherit;
+  background-color: transparent;
   font-family: "OpenSans Light", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -364,11 +363,11 @@ a {
 .show-menu::after {
   content: "";
   position: absolute;
-  top: 27px;
+  top: 28px;
   left: 230px;
-  width: 17px;
-  height: 3px;
-  background-color: rgba(0, 0, 0, 0.6);
+  width: 16px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .show-menu::before {
@@ -376,15 +375,15 @@ a {
   position: absolute;
   top: 21px;
   left: 237px;
-  width: 3px;
+  width: 2px;
   height: 16px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 
 .sales-hits {
   background-image: linear-gradient(to bottom, #f8e297 114px, #ffffff 114px);
-  width: 100%;
+  width: 1160px;
   min-height: 510px;
 }
 
@@ -562,7 +561,7 @@ a {
 #selfi-slide:checked ~ .toggles-sales-hits .radio-selfi::after,
 #fitnes-slide:checked ~ .toggles-sales-hits .radio-fitnes::after,
 #copter-slide:checked ~ .toggles-sales-hits .radio-copter::after   {
-  content: '';
+  content: "";
   display: block;
   width: 3px;
   height: 3px;
@@ -621,7 +620,7 @@ input#copter-slide:checked ~ .copter-slide {
   margin: 35px 0 0 0;
   line-height: 23px;
   font-family: "Gilroy", Arial, sans-serif;
-  font-weight: bold; 
+  font-weight: bold;
   letter-spacing: 0.4px;
   font-size: 17.5px;
 }
@@ -666,7 +665,6 @@ input#copter-slide:checked ~ .copter-slide {
 
 .service-slider {
   display: flex;
-  width: 100%;
   min-height: 468px;
   position: relative;
   background-color: transparent;
@@ -785,7 +783,6 @@ input#credit-slide:checked ~ .slide-credit {
 .about-us-block {
   display: block;
   position: relative;
-  width: 100%;
   min-height: 400px;
 }
 
@@ -794,7 +791,7 @@ input#credit-slide:checked ~ .slide-credit {
   flex-wrap: wrap;
   margin-top: 96px;
   margin-bottom: 79px;
-  width: 100%;
+  width: 1160px;
   height: 95px;
 }
 
@@ -974,7 +971,7 @@ input#credit-slide:checked ~ .slide-credit {
 }
 
 .breadcrumbs-catalog a {
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 .breadcrumbs-catalog a:hover {
@@ -988,12 +985,12 @@ input#credit-slide:checked ~ .slide-credit {
 .filters-bg {
   width: 100%;
   min-height: 70px;
-  background-image: linear-gradient(to right, #dbdbdb 700px, #ebebeb 700px)
-} 
+  background-image: linear-gradient(to right, #dbdbdb 50%, #ebebeb 50%)
+}
 
 .price-item-bg {
   width: 100%;
-  background-image: linear-gradient(to right, #ebebeb 700px, #ffffff 700px)
+  background-image: linear-gradient(to right, #ebebeb 50%, #ffffff 50%)
 }
 
 .filters-container,
@@ -1004,13 +1001,18 @@ input#credit-slide:checked ~ .slide-credit {
 
 .filter-title {
   min-height: 70px;
-  width: 400px;
+  width: 28.5%;
+  min-width: 262px;
+  background-color: #dcdcdc;
 }
 
 .filter-name {
+  box-sizing: border-box;
+  padding-left: 69px;
   min-height: 70px;
-  flex-grow: 1;
+  width: 67.5%;
   display: flex;
+  background-color: #ebebeb;
 }
 
 .filter-title p,
@@ -1034,6 +1036,10 @@ input#credit-slide:checked ~ .slide-credit {
   font-size: 14px;
 }
 
+.filter-categories li {
+  flex-shrink: 0;
+}
+
 .filter-categories a {
   margin-right: 29px;
   opacity: 0.3;
@@ -1054,10 +1060,14 @@ input#credit-slide:checked ~ .slide-credit {
 
 .pointer {
   display: flex;
+  box-sizing: border-box;
+  padding: 27px 0 0 5px;
   justify-content: space-between;
-  margin: 27px 0 0 0;
-  width: 40px;
+
+  width: 4%;
+  min-height: 70px;
   height: 15px;
+  background-color: #ebebeb;
 }
 
 .pointer path {
@@ -1079,9 +1089,12 @@ input#credit-slide:checked ~ .slide-credit {
 
 .item-details {
   box-sizing: border-box;
+  flex-shrink: 0;
   padding-left: 58px;
-  width: 400px;
+  width: 28.5%;
+  min-width: 262px;
   min-height: 326px;
+  background-color: #ebebeb;
 }
 
 .price-checkbox-form {
@@ -1215,8 +1228,12 @@ input#credit-slide:checked ~ .slide-credit {
 }
 
 .catalog-item {
-  width: 760px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding-left: 70px;
+  width: 71.5%;
   padding-top: 70px;
+  background-color: #ffffff;
 }
 
 .catalog-item .item-list {
@@ -1374,11 +1391,13 @@ input#credit-slide:checked ~ .slide-credit {
 
 .main-footer {
   width: 100%;
+  min-width: 1160px;
   min-height: 323px;
   background-color: #474747;
 }
 
 .container-footer {
+  width: 1160px;
   min-height: 323px;
   padding-top: 65px;
   background-color: transparent;
@@ -1470,12 +1489,18 @@ input#credit-slide:checked ~ .slide-credit {
 
 .footer-info-block {
   display: flex;
+  flex-shrink: 0;
   margin-bottom: 62px;
   padding-top: 27px;
 }
 
+.footer-info-block p {
+  flex-shrink: 0;
+}
+
 .footer-service-block {
   display: flex;
+  flex-shrink: 0;
   flex-wrap: wrap;
   width: 432px;
   margin-right: 200px;
