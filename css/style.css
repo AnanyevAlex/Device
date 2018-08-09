@@ -13,7 +13,7 @@
 }
 
 @font-face{
- font-family: "OpenSans Light"; /* Гарнитура шрифта */
+ font-family: "OpenSans"; /* Гарнитура шрифта */
  src: url(../fonts/OpenSans-Light.ttf) format("truetype"); /* Путь к файлу со шрифтом */
  font-weight: 300;
  font-style:normal;
@@ -203,7 +203,7 @@ a {
 .buy-navigation {
   border: none;
   background-color: transparent;
-  font-family: "OpenSans Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
 }
@@ -345,7 +345,7 @@ a {
 .mod-menu ul {
   min-width: 200px;
   margin-top: 28px;
-  font-family: "OpenSans Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
   letter-spacing: 0;
@@ -429,7 +429,7 @@ a {
 .slide-info p {
   margin: 20px 0 0 10px;
   padding-right: 31px;
-  font-family: "OpenSans Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   letter-spacing: 0.2px;
@@ -526,7 +526,7 @@ a {
 }
 
 .slide-info .detail-name {
-  font-family: "OpenSans Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   font-weight: 300;
   font-size: 13px;
 }
@@ -732,7 +732,7 @@ input#copter-slide:checked ~ .copter-slide {
 .credit-info p {
   margin-top: 28px;
   padding-right: 25px;
-  font-family: "OpenSans Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   letter-spacing: 0.3px;
@@ -883,7 +883,7 @@ input#credit-slide:checked ~ .slide-credit {
 
 .about-us-info p,
 .device-contacts p {
-  font-family: "OpenSans Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   margin: 0;
   font-weight: 300;
   font-size: 15px;
@@ -950,7 +950,8 @@ input#credit-slide:checked ~ .slide-credit {
 .product-catalog .breadcrumbs-catalog {
   display: flex;
   font-size: 14px;
-  font-family: "Open Sans-Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
+  font-weight: 300;
   margin: 23px 0 45px 60px;
 }
 
@@ -1175,7 +1176,8 @@ input#credit-slide:checked ~ .slide-credit {
   position: relative;
   font-size: 14px;
   padding-left: 37px;
-  font-family: "Open Sans-Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
+  font-weight: 300;
   font-size: 15px;
 }
 
@@ -1409,7 +1411,8 @@ input#credit-slide:checked ~ .slide-credit {
 }
 
 .footer-user-block a {
-  font-family: "Open Sans-Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
+  font-weight: 300;
   font-size: 15px;
   padding-left: 23px;
   color: #fff;
@@ -1533,7 +1536,8 @@ input#credit-slide:checked ~ .slide-credit {
 }
 
 .footer-info-block p {
-  font-family: "Open Sans-Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
+  font-weight: 300;
   margin: 0;
   letter-spacing: 0.4px;
   color: #fff;
@@ -1542,7 +1546,8 @@ input#credit-slide:checked ~ .slide-credit {
 
 .footer-info-block .address {
   position: relative;
-  font-family: "Open Sans-Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
+  font-weight: 300;
   margin: 0;
   margin-right: 165px;
 }
