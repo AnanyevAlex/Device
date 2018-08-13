@@ -791,7 +791,7 @@ input#credit-slide:checked ~ .slide-credit {
   display: flex;
   flex-wrap: wrap;
   margin-top: 96px;
-  margin-bottom: 79px;
+  margin-bottom: 77px;
   width: 1160px;
   height: 95px;
 }
@@ -877,7 +877,7 @@ input#credit-slide:checked ~ .slide-credit {
 .about-us-info h2,
 .device-contacts h2 {
   line-height: 50px;
-  margin: 27px 0 42px 0;
+  margin: 27px 0 45px 0;
   font-weight: bold;
   font-size: 47px;
 }
@@ -888,7 +888,6 @@ input#credit-slide:checked ~ .slide-credit {
   margin: 0;
   font-weight: 300;
   font-size: 15px;
-  letter-spacing: 0.2px;
   line-height: 28px;
 }
 
