@@ -1,15 +1,27 @@
 var writeUs = document.querySelector(".write-us");
 var popupFeedback = document.querySelector(".modal-feedback");
-var modalClose = document.querySelectorAll(".modal-close");
-var allModal = document.querySelectorAll(".modal");
+var feedbackClose = document.querySelector(".modal-feedback-close");
+var imgMap = document.querySelector(".device-map");
+var popupMap = document.querySelector("modal-map");
+var mapClose = document.querySelector(".modal-map-close");
+
 
 writeUs.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	console.log("Клик");
 	popupFeedback.classList.add("modal-show");
 });
 
-modalClose.addEventListener("click", function (evt) {
+feedbackClose.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	allModal.classList.remove("modal-show");
+	popupFeedback.classList.remove("modal-show");
+});
+
+imgMap.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	popupMap.classList.add("modal-show");
+});
+
+mapClose.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	popupFeedback.classList.remove("modal-show");
 });

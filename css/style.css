@@ -1674,7 +1674,8 @@ input#credit-slide:checked ~ .slide-credit {
   height: 556px;
 }
 
-.modal-close {
+.modal-feedback-close,
+.modal-map-close {
   position: absolute;
   outline: none;
   top: 24px;
@@ -1685,11 +1686,13 @@ input#credit-slide:checked ~ .slide-credit {
   padding: 0;
 }
 
-.modal-close:hover path {
+.modal-feedback-close:hover path,
+.modal-map-close:hover path {
   fill: #f1c52e;
 }
 
-.modal-close:active path {
+.modal-feedback-close:active path,
+.modal-map-close:active path {
   fill: #faedc0;
 }
 
